@@ -17,7 +17,7 @@
         cd();
         function cd(){
         var now = new Date();
-        var endTime = new Date('2018/12/31 24:00:00');
+        var endTime = new Date('2019/12/31 24:00:00');
         var t = endTime.getTime() - now.getTime();
         if(t==0||t<0){
             document.getElementById('div').innerHTML = '新年快乐';
@@ -28,7 +28,7 @@
         var m = Math.floor(t/1000/60%60);
         var s = Math.floor(t/1000%60);
         var ms = Math.floor(t%1000);
-        document.getElementById('div').innerHTML = '距离2019年还有'+d+'天'+h+'时'+m+'分钟'+ms+'毫秒';
+        document.getElementById('div').innerHTML = '距离2020年还有'+d+'天'+h+'时'+m+'分钟'+ms+'毫秒';
 
         setTimeout('cd()',1);}
 
